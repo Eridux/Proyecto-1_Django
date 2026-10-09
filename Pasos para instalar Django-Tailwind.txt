@@ -1,0 +1,21 @@
+=======================================
+ Pasos para instalar Django-Tailwind 4
+=======================================
+
+1.- uv add 'django-tailwind[cookiecutter,honcho,reload]'
+
+2.- uv run manage.py tailwind init
+
+	Enter Tailwind app name [theme]: theme
+	
+3.- Agregar en el archivo setting.py
+
+	INSTALLED_APPS = [
+		# tus apps
+		"tailwind",
+		"theme",
+	]
+
+	TAILWIND_APP_NAME = "theme"
+	
+4.- uv run manage.py tailwind install
