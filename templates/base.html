@@ -1,0 +1,23 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        
+        {% block titulo %}
+            
+        {% endblock titulo %}
+            
+    </title>
+    {% tailwind_css %}
+</head>
+<body class="bg-gray-500">
+    
+    {% block contenido %}
+        
+    {% endblock contenido %}
+        
+</body>
+</html>
